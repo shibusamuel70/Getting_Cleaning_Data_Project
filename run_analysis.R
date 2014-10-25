@@ -1,3 +1,9 @@
+## Getting Cleaning Data Project
+##
+##
+##
+
+
 ## Load Library
 library(reshape2)
 
@@ -62,16 +68,8 @@ for (l in 1:nrow(ActLabels)) {
 
 ##Filter merged data set for mean and std columns
 StdMeanData <- data.frame(Subject=TestTrainData$Subject,Activity=TestTrainData$Activity)
-for (c in names(TestTrainData)) {
-  t <-grep("-std()",c,fixed =TRUE)
-  if(length(t)>0) {
-    StdMeanData <- cbind(StdMeanData,TestTrainData[c])
-  }
-  t <-grep("-mean()",c,fixed =TRUE)
-  if(length(t)>0) {
-    StdMeanData <- cbind(StdMeanData,TestTrainData[c])
-  }
-}
+allCols <- names(TestTrainData)
+StdMeanData <- cbind(StdMeanData,TestTrainData[,c(grep("mean|std",tolower(allCols)))])
 
 ## Average of each variable for each activity and each subject
 mStdMeanData <- melt(StdMeanData, id=c("Subject","Activity"))
