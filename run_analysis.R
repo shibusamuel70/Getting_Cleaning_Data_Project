@@ -80,6 +80,7 @@ names(dcStdMeanData) <- sub("()","",names(dcStdMeanData),fixed=TRUE)
 names(dcStdMeanData) <- sub(",","_",names(dcStdMeanData),fixed=TRUE)
 names(dcStdMeanData) <- sub("(","_",names(dcStdMeanData),fixed=TRUE)
 names(dcStdMeanData) <- sub(")","",names(dcStdMeanData),fixed=TRUE)
+names(dcStdMeanData) <- sub(")","",names(dcStdMeanData),fixed=TRUE)
 
 print("Writing Final Tidy dataset to TidyDataSet.txt file")
 #print(dcStdMeanData)

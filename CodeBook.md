@@ -95,7 +95,7 @@ The final tidy dataset file TidyDataSet.txt contains the average of each variabl
 - fBodyBodyGyroJerkMag-std
 - fBodyBodyGyroJerkMag-meanFreq
 - angle_tBodyAccMean_gravity
-- angle_tBodyAccJerkMean_gravityMean)
+- angle_tBodyAccJerkMean_gravityMean
 - angle_tBodyGyroMean_gravityMean
 - angle_tBodyGyroJerkMean_gravityMean
 - angle_X_gravityMean
