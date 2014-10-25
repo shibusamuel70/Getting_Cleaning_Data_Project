@@ -15,13 +15,13 @@ The data for the above is located at https://d396qusza40orc.cloudfront.net/getda
 2. Also download the data set from [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) to the working directory
 3. At the R prompt (R Studio) execute command - source("./run_analysis.R") 
 4. On executing one should see following messages on the screen
-> 	[1] "Loading Train data...."
-> 	[1] "Completed Loading Train data"
-> 	[1] "Loading Test data...."
-> 	[1] " Completed Loading Test data"
-> 	[1] " Merging Train and Test data...."
-> 	[1] " COMPLETED Merging Train and Test data"
-> 	[1] "Writing Final Tidy dataset to TidyDataSet.txt file"
+	[1] "Loading Train data...."
+	[1] "Completed Loading Train data"
+	[1] "Loading Test data...."
+	[1] " Completed Loading Test data"
+	[1] " Merging Train and Test data...."
+	[1] " COMPLETED Merging Train and Test data"
+	[1] "Writing Final Tidy dataset to TidyDataSet.txt file"
 
 ## A Brief Process Flow ##
 1. Load the Train and Test data
