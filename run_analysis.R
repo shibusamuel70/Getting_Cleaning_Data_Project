@@ -86,5 +86,5 @@ names(dcStdMeanData) <- sub(")","",names(dcStdMeanData),fixed=TRUE)
 print("Writing Final Tidy dataset to TidyDataSet.txt file")
 #print(dcStdMeanData)
 
-write.table(dcStdMeanData,"./TidyDataSet.txt",row.name=FALSE)
+write.table(dcStdMeanData,"./TidyDataSet.txt",row.name=FALSE,quote = FALSE)
 
